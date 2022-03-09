@@ -4,7 +4,3 @@ from db import db
 def create_table():
     db.create_all()
 
-if __name__=="__main__":
-    db.init_app(app)
-    app.run(debug=True)
-    
