@@ -12,7 +12,7 @@ class blogostmodel(db.Model):
     
        
     def json(self):
-        return {"title":self.title,"content":self.content,"id":'<id {}>'.format(self.id)}
+        return {"title":self.title,"content":self.content,"id":'{}'.format(self.id)}
     def save_to_db(self):
 
        db.session.add(self)
